@@ -1,5 +1,6 @@
 ### Description
-Simple POC for SFTP in java using Jsch library over ganymed-ssh2 which is using deprecated ciphers and is not actively maintained.
+Simple POC for SFTP in java. Motivation is to replace `ganymed-ssh-2` which is restricted to `ssh-rsa` or `ssh-dss` for signature algorithms & key type.
+In particular, signatures with those algorithms are deprecated as of ssh v8.8 as well AND the SHA1 crpyto family (which includes said algorithsm) are disabled by default on RHEL operating systems.
 
 ### Build Steps
 ```sh
