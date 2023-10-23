@@ -18,3 +18,5 @@ java -cp ".:lib/jsch-0.1.55.jar:classes" src/com/example/Main
 # This is out of date don't do this
 jar cf sftp-poc.jar classes/*.class
 ```
+
+Note that there is also an included `build-and-run.sh` which handles this process for you
