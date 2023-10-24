@@ -4,13 +4,13 @@ In particular, signatures with those algorithms are deprecated as of ssh v8.8 as
 
 ### Build Steps
 ```sh
-javac -cp ".:lib/jsch-0.1.55.jar" -d classes src/**/**/*.java
+javac -cp ".:lib/*" -d classes src/**/**/*.java
 
 ```
 
 ### To Run
 ```sh
-java -cp ".:lib/jsch-0.1.55.jar:classes" src/com/example/Main
+java -cp ".:lib/*:classes" src/com/example/Main
 ```
 
 ### To Build as Jar
